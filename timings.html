@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Distribution System - Opening Hours</title>
+    <style>
+      
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('main.jpeg');
+            background-size: cover; /* Adjust the image size */
+            margin: 0;
+            padding: 0;
+       
+        }
+
+        header {
+            
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        .opening-hours {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        .day {
+            font-weight: bold;
+            flex: 1;
+        }
+
+        .time {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Public Distribution System Opening Hours</h1></header>
+        
+    
+
+    <div class="opening-hours">
+        <ul>
+            <li>
+                <span class="day">Monday</span>
+                <span class="time">8:00 AM - 5:00 PM</span>
+            </li>
+            <li>
+                <span class="day">Tuesday</span>
+                <span class="time">8:00 AM - 5:00 PM</span>
+            </li>
+            <li>
+                <span class="day">Wednesday</span>
+                <span class="time">8:00 AM - 5:00 PM</span>
+            </li>
+            <li>
+                <span class="day">Thursday</span>
+                <span class "time">8:00 AM - 5:00 PM</span>
+            </li>
+            <li>
+                <span class="day">Friday</span>
+                <span class="time">8:00 AM - 5:00 PM</span>
+            </li>
+            <li>
+                <span class="day">Saturday</span>
+                <span class="time">9:00 AM - 4:00 PM</span>
+            </li>
+            <li>
+                <span class="day">Sunday</span>
+                <span class="time">Closed</span>
+            </li>
+        </ul>
+    </div>
+    <script>
+        const updateStatusButton = document.getElementById("updateStatus");
+        const statusSelect = document.getElementById("status");
+
+        updateStatusButton.addEventListener("click", () => {
+            const selectedStatus = statusSelect.value;
+            if (selectedStatus === "open") {
+                alert("The shop is now open.");
+            } else {
+                alert("The shop is now closed.");
+            }
+        });
+    </script>
+</body>
+</html>

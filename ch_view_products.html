@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDS Item List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('main.jpeg');
+            background-size: cover; /* Adjust the image size */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            color: navy;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        table {
+            margin: 20px auto;
+            background-color: rgb(253, 239, 239);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+
+        th {
+            background-color: rgb(253, 239, 239);
+        }
+
+        th:first-child, td:first-child {
+            border-left: none;
+        }
+
+        th:last-child, td:last-child {
+            border-right: none;
+        }
+        
+        /* Define a width for the image column */
+        td.image-column {
+            width: 100px;
+        }
+        
+        /* Style the image column */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <header>
+        <h1>List of Products</h1>
+    </header>
+    
+    <table>
+        <tr>
+            <th>Sl. No.</th>
+            <th>Name of the Commodity</th>
+            <th>Price per Kg</th>
+            <th>Scale of Supply</th>
+            <th>Image</th> <!-- New column for images -->
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Rice</td>
+            <td>Free of Cost</td>
+            <td>All rice card holders are eligible for 5 kg of rice per person (including a child) per month or erstwhile entitlement (prior to NFS) whichever is higher. All AAY cards are supplied with 35 Kg per month.</td>
+            <td class="image-column"><img src="rice.jpeg" alt="Rice"></td> <!-- Replace 'rice.jpg' with the actual image URL -->
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Sugar</td>
+            <td>Rs. 13.50 per Kg for AAY cards, Rs. 25 for all other cards</td>
+            <td>500 grams per head per month subject to a maximum of 2 kgs per month. In the case of sugar option cardholders, 500 grams per head per month plus an additional quantity of 3 kg of sugar subject to a maximum of 5 kg per month.</td>
+            <td class="image-column"><img src="sugar.jpg" alt="Sugar"></td> <!-- Replace 'sugar.jpg' with the actual image URL -->
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Wheat</td>
+            <td>Free of Cost</td>
+            <td>Out of the rice entitlement of a family card, 10 kgs per month in Chennai City and district headquarters and 5 kgs per month in other areas are issued in lieu of rice at free of cost subject to the availability of wheat.</td>
+            <td class="image-column"><img src="wheat.jpg" alt="Wheat"></td> <!-- Replace 'wheat.jpg' with the actual image URL -->
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Kerosene</td>
+            <td>Rs. 13.60 to Rs. 14.20 per litre</td>
+            <td>Ranges from 3-15 litres per family card depending upon the possession of LPG connection and place of residence of the family cardholders.</td>
+            <td class="image-column"><img src="kerosene.jpg" alt="Kerosene"></td> <!-- Replace 'kerosene.jpg' with the actual image URL -->
+        </tr>
+    </table>
+</body>
+</html>
